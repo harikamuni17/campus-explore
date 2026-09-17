@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.not-found {
+  min-height: 100vh;
+  padding: 100px 30px;
+  background-color: #f5f7ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.not-found h2 {
+  font-size: 80px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.not-found h3 {
+  font-size: 30px;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.not-found p {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.not-found a {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.not-found a:hover {
+  background-color: #162d6b;
+}

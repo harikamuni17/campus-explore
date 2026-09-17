@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f5f7ff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.search-box {
+  width: 350px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.search-box:focus {
+  border-color: #1e3a8a;
+}
+
+
+/* Upcoming Events */
+
+.home{
+  background-color: rgb(233, 237, 240);
+}
+
+.upcoming-events {
+  padding: 60px 50px;
+}
+
+.upcoming-events h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #081741;
+}
+
+.event-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.event-card {
+  width: 350px;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #7e95c3;
+  background-color: rgb(18, 9, 43);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.event-card h3 {
+  color: #e1cbe1;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.event-card p {
+  color: #88a5bd;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}

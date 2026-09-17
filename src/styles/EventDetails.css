@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.event-details {
+  min-height: 100vh;
+  padding: 60px 50px;
+  background-color: #f5f7ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Event Heading */
+
+.event-details h1 {
+  font-size: 38px;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* Description */
+
+.event-details > p {
+  max-width: 700px;
+  margin: 0 auto 15px;
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Date and Venue */
+
+.event-details > p:nth-of-type(2),
+.event-details > p:nth-of-type(3) {
+  font-size: 16px;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+/* Activities List */
+
+.event-details ul {
+  width: 500px;
+  max-width: 100%;
+  margin: 30px auto 0;
+  padding: 25px 40px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.event-details li {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.event-details li:last-child {
+  margin-bottom: 0;
+}
