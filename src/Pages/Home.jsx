@@ -3,46 +3,24 @@ import Hero from '../Components/Hero'
 import ClubCard from '../Components/ClubCard'
 import EventCard from '../Components/EventCard'
 import { useState } from 'react'
-const clubs = [
-  {
-    name: "Coding Club",
-    text: "Learn coding and build projects"
-  },
-  {
-    name: "Photography Club",
-    text: "Capture moments and explore creativity"
-  },
-  {
-    name: "Robotics Club",
-    text: "Build robots and experiment with tech"
-  },
-  {
-    name: "Arts Club",
-    text: "Explore art and express your creativity"
-  }
-]
-const events = [
-  {
-    name: "Tech Fest 2026",
-    text: "Join coding competitions, workshops and exciting technology activities.",
-    date: "September 20, 2026"
-  },
-  {
-    name: "Photography Meetup",
-    text: "Explore photography, share ideas and learn creative skills.",
-    date: "September 25, 2026"
-  }
-]
+import clubs from '../data/clubs'
+import events from '../data/events'
+
 const Home = () => {
   const [search, setSearch] = useState("")
+  const allClubs = Object.values(clubs)
+  const allEvents = Object.values(events)
+
   const filteredClubs = search.trim()
-    ? clubs.filter((club) =>
-        club.name.toLowerCase().includes(search.toLowerCase())
+    ? allClubs.filter((club) =>
+        club.name.toLowerCase().includes(search.toLowerCase())||
+        club.description.toLowerCase().includes(search.toLowerCase())
       )
     : []
   const filteredEvents = search.trim()
-    ? events.filter((event) =>
-        event.name.toLowerCase().includes(search.toLowerCase())
+    ? allEvents.filter((event) =>
+        event.name.toLowerCase().includes(search.toLowerCase())||
+        event.description.toLowerCase().includes(search.toLowerCase())
       )
     : []
   return (
@@ -58,7 +36,7 @@ const Home = () => {
         <ClubCard
           key={club.name}
           name={club.name}
-          text={club.text}
+          text={club.description}
         />
       ))}
 
@@ -66,7 +44,7 @@ const Home = () => {
         <EventCard
           key={event.name}
           name={event.name}
-          text={event.text}
+          text={event.description}
           date={event.date}
         />
       ))}

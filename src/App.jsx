@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import Navbar from './Components/Navbar'
+  import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
 import Clubs from './Pages/Clubs'
 import Events from './Pages/Events'
