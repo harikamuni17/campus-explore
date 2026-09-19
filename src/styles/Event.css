@@ -41,7 +41,7 @@
 
 .club-events {
   display: grid;
-  grid-template-columns: repeat(2, 350px);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   justify-content: center;
   gap: 30px;
 }
@@ -87,4 +87,18 @@
 
 .event a:hover {
   background-color: #162d6b;
+}
+
+@media (max-width: 600px) {
+  .events-page {
+    padding: 35px 20px;
+  }
+
+  .events-page h2 {
+    font-size: 28px;
+  }
+
+  .events-page h4 {
+    font-size: 16px;
+  }
 }

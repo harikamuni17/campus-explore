@@ -32,22 +32,26 @@ const Home = () => {
         <h2>Search Results</h2>
       )}
 
-      {filteredClubs.map((club) => (
-        <ClubCard
-          key={club.name}
-          name={club.name}
-          text={club.description}
-        />
-      ))}
+      <div className="search-cards">
 
-      {filteredEvents.map((event) => (
-        <EventCard
-          key={event.name}
-          name={event.name}
-          text={event.description}
-          date={event.date}
-        />
-      ))}
+        {filteredClubs.map((club) => (
+          <ClubCard
+            key={club.name}
+            name={club.name}
+            text={club.description}
+          />
+        ))}
+
+        {filteredEvents.map((event) => (
+          <EventCard
+            key={event.name}
+            name={event.name}
+            text={event.description}
+            date={event.date}
+          />
+        ))}
+
+      </div>
 
       {search.trim() &&
       filteredClubs.length === 0 &&

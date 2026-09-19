@@ -87,3 +87,54 @@
   line-height: 1.5;
   margin-bottom: 10px;
 }
+
+.search-results {
+  padding: 40px 50px;
+  background-color: #f5f7ff;
+  font-family: Arial, sans-serif;
+}
+
+.search-results h2 {
+  text-align: center;
+  color: #1e3a8a;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.search-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 380px));
+  justify-content: center;
+  gap: 25px;
+  align-items: stretch;
+}
+
+.search-cards > section {
+  min-width: 0;
+}
+
+.search-cards .card {
+  height: 100%;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.search-results > p {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+  .search-results {
+    padding: 30px 20px;
+  }
+
+  .search-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,7 +1,7 @@
 const events = {
   "tech-fest-2026": {
     name: "Tech Fest 2026",
-    description: "Join coding competitions, workshops and exciting technology activities.",
+    description: "Join fest competitions, workshops and exciting tech activities.",
     date: "September 20, 2026",
     venue: "Main Auditorium",
     activities: [

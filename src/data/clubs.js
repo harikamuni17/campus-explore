@@ -12,7 +12,7 @@ const clubs = {
 
   "photography-club": {
     name: "Photography Club",
-    description: "Capture moments and explore your creativity through photography.",
+    description: "Capture moments and explore your creativity.",
     activities: [
       "Photography workshops",
       "Photo walks",
